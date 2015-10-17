@@ -4,13 +4,25 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Dummy Input</h1>
-  <form id="search">
-    <input name="searchInput" type="text">
-    <input type="submit">
-  </form>
+
+  <div id="background">
+    
+    <div class="name1">
+      <input id="name" placeholder="Last, First Name">
+      <div class="title">
+        <input id="title" placeholder="Title goes here">
+      </div>
+    </div>
+
+    <form id="search" >
+      <textarea class="words" name="searchInput" tabindex="1"></textarea>
+     
+    </form >
+
+    <div id="suggest"></div>
+    
+  </div>
   
-  <div id="suggest"></div>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="./controller.js"></script>

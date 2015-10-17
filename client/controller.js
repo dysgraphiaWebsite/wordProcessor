@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
-  $("#search").submit(function(e) {
+  $(".words").on('keyup', function(e) {
     e.preventDefault();
-    var value = this.searchInput.value;
+    if (e.keyCode !== 13) return;
+    var value = this.value.trim();
     var phrase = value.match(/\w+$/)[0];
 
     $.get('/words/' + phrase, function(data) {
@@ -16,10 +17,10 @@ $(document).ready(function() {
 
   $('#suggest').on('click', '.suggestion', function() {
 
-    var input = document.querySelector('#search input');
-    var value = input.value;
+    var input = document.querySelector('#search textarea');
+    var value = input.value.trim();
     input.value = value.replace(/\w+$/, this.innerText + ' ');
-    $('#search input[type=text]').focus();
+    $('#search textarea').focus();
     
   });
 

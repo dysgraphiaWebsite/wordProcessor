@@ -1,5 +1,6 @@
-body, html {
-  min-height: 100%;
+#background {
+  background-image: url('../images/elemanatry-school-paper.gif');
+  height: 100%;
 }
 
 #suggest {
@@ -7,6 +8,35 @@ body, html {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 300px;
+  width: 30%;
   background-color: #ccc;
 }
+
+#name {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+#title {
+  position: relative;
+  top: 25px;
+  left: 410px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.words {
+  padding: 0;
+  background: transparent;
+  font-size: xx-large;
+  left: 0%;
+  margin-top: 2%;
+  width: 70%;
+  border-style: none;
+  height: 1000px;
+  line-height: 2.05;
+  letter-spacing: 5px;
+}
+

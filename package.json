@@ -1,0 +1,23 @@
+{
+  "name": "dysgraphia-word-processor",
+  "version": "1.0.0",
+  "description": "Website that makes it easier for kids with dysgraphia to write a paragraph by using auto complete.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dysgraphiaWebsite/wordProcessor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dysgraphiaWebsite/wordProcessor/issues"
+  },
+  "homepage": "https://github.com/dysgraphiaWebsite/wordProcessor#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jquery": "^2.1.4"
+  }
+}

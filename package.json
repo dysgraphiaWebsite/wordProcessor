@@ -4,6 +4,7 @@
   "description": "Website that makes it easier for kids with dysgraphia to write a paragraph by using auto complete.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/dysgraphiaWebsite/wordProcessor#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "nodemon": "^1.7.1",
+    "mongodb": "^2.0.46"
   }
 }
